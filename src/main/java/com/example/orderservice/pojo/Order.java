@@ -13,23 +13,23 @@ public class Order implements Serializable {
     @Id
     private String _id;
     private String customer_id;
-    private Double total_cost;
+    private double total_cost;
     private ArrayList<Product> products;
 
     public Order(){}
-    public Order(String _id, String customer_id, Double total_cost,ArrayList<Product> products){
+    public Order(String _id, String customer_id, double total_cost,ArrayList<Product> products){
         this._id = _id;
         this.customer_id = customer_id;
         this.total_cost = total_cost;
         this.products = products;
     }
-    public Order(String _id, String customer_id, Double total_cost){
+    public Order(String _id, String customer_id, double total_cost){
         this._id = _id;
         this.customer_id = customer_id;
         this.total_cost = total_cost;
     }
 
-    public Order(String customer_id, Double total_cost, ArrayList<Product> products) {
+    public Order(String customer_id, double total_cost, ArrayList<Product> products) {
         this.customer_id = customer_id;
         this.total_cost = total_cost;
         this.products = products;
@@ -59,11 +59,11 @@ public class Order implements Serializable {
         this.customer_id = customer_id;
     }
 
-    public Double getTotal_cost() {
+    public double getTotal_cost() {
         return total_cost;
     }
 
-    public void setTotal_cost(Double total_cost) {
+    public void setTotal_cost(double total_cost) {
         this.total_cost = total_cost;
     }
 }
